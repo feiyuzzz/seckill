@@ -47,6 +47,7 @@ public class AccessLimitInterceptor implements HandlerInterceptor {
             boolean needLogin = accessLimit.needLogin();
             String key = request.getRequestURI();
             if (needLogin) {
+
                 if (user == null) {
                     render(response, RespBeanEnum.SESSION_ERROR);
                     return false;

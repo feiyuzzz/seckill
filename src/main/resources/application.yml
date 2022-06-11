@@ -5,12 +5,9 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    # jdbc:mysql://114.132.40.5:3306/seckill?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    # jdbc:mysql://localhost:3306/seckill?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    url: jdbc:mysql://114.132.40.5:3306/seckill?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url: #jdbc:mysql://####/seckill?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
-    #2017yyds  2017YYds,
-    password: 2017YYds,
+    password: ####
 
     hikari:
       #链接池名
@@ -31,7 +28,7 @@ spring:
       connection-test-query: SELECT 1
 
   rabbitmq:
-    host: 192.168.206.133
+    host: ####
     username: guest
     password: guest
     virtual-host: /
@@ -62,7 +59,7 @@ spring:
         multiplier: 1
 
   redis:
-    host: 192.168.206.132
+    host: ####
     port: 6379
     database: 0
     password: eddie
